@@ -1,27 +1,28 @@
 :root {
-    --background-surface: #EFEFEF;
-    --primaryColor: #43281C;
-    --secondaryColor: #333D29;
-    --color3: #7F4F24;
-    --color4: #B08968;
-    --color5: #DDB892;
-    --color6: #EDE0D4;
-    --highlight: #FBF2C6;
+    --background-surface: #efefef;
+    --primaryColor: #43281c;
+    --secondaryColor: #333d29;
+    --color3: #7f4f24;
+    --color4: #b08968;
+    --color5: #ddb892;
+    --color6: #ede0d4;
+    --highlight: #fbf2c6;
 }
 
 body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(214, 213, 213);
 }
 
-body>header {
+body > header {
     position: fixed;
     width: 100%;
     top: 0;
 }
 
-body>main {
+body > main {
     margin: auto;
     margin-top: 60px;
     max-width: 500px;
