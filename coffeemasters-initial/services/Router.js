@@ -25,20 +25,17 @@ const Router = {
         let pageElement = null;
         switch (route) {
             case '/':
-                pageElement = document.createElement('h1');
-                pageElement.textContent = 'Menu';
+                pageElement = document.createElement('menu-page');
                 break;
             case '/order':
-                pageElement = document.createElement('h1');
-                pageElement.textContent = 'Your order';
+                pageElement = document.createElement('order-page');
                 break;
             default:
                 if (route.startsWith('/product-')) {
-                    pageElement = document.createElement('h1');
-                    pageElement.textContent = 'Details';
+                    pageElement = document.createElement('details-page');
                     const paramId = route.substring(route.lastIndexOf('-') + 1);
                     // * next line seting custom property on HTMLElement
-                    pageElement.dataset.id = paramId;
+                    pageElement.dataset.productId = paramId;
                 }
         }
         if (pageElement) {
